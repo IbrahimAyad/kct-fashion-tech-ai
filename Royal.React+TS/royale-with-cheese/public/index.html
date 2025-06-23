@@ -1,0 +1,145 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <link rel="icon" href="%PUBLIC_URL%/favicon.ico" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <meta name="theme-color" content="#DC2626" />
+    
+    <!-- Performance optimizations -->
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="format-detection" content="telephone=no">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="dns-prefetch" href="//fonts.googleapis.com">
+    <link rel="dns-prefetch" href="//fonts.gstatic.com">
+    
+    <!-- Canonical URL -->
+    <link rel="canonical" href="https://royalewithcheese.menu/" />
+    
+    <!-- SEO and Social Media -->
+    <meta name="description" content="Detroit's most awarded burger destination featuring AI-powered ordering and premium gourmet burgers" />
+    <meta name="keywords" content="burgers, Detroit, Pulp Fiction, restaurant, gourmet, Midtown, food, dining, Royale with Cheese, Big Kahuna, craft shakes" />
+    <meta name="author" content="Royale with Cheese Restaurant" />
+    <meta name="robots" content="index, follow" />
+    
+    <!-- Open Graph / Facebook -->
+    <meta property="og:type" content="website" />
+    <meta property="og:url" content="https://royalewithcheese.menu/" />
+    <meta property="og:title" content="🍔 Royale with Cheese - Detroit's #1 Burger Destination" />
+    <meta property="og:description" content="🎬 Experience Pulp Fiction themed dining with gourmet burgers like our famous Big Kahuna, signature bites, and craft shakes in Midtown Detroit! 📍 4163 Cass Ave" />
+    <meta property="og:image" content="https://royalewithcheese.menu/og-image.jpg" />
+    <meta property="og:image:width" content="1200" />
+    <meta property="og:image:height" content="630" />
+    <meta property="og:site_name" content="Royale with Cheese" />
+    <meta property="og:locale" content="en_US" />
+    
+    <!-- Twitter -->
+    <meta property="twitter:card" content="summary_large_image" />
+    <meta property="twitter:url" content="https://royalewithcheese.menu/" />
+    <meta property="twitter:title" content="🍔 Royale with Cheese - Detroit's #1 Burger Destination" />
+    <meta property="twitter:description" content="🎬 Experience Pulp Fiction themed dining with gourmet burgers like our famous Big Kahuna, signature bites, and craft shakes! 📍 Midtown Detroit" />
+    <meta property="twitter:image" content="https://royalewithcheese.menu/og-image.jpg" />
+    <meta property="twitter:creator" content="@RoyaleWithCheese" />
+    <meta property="twitter:site" content="@RoyaleWithCheese" />
+    
+    <!-- Local Business Schema -->
+    <script type="application/ld+json">
+    {
+      "@context": "https://schema.org",
+      "@type": "Restaurant",
+      "name": "Royale with Cheese",
+      "description": "Detroit's #1 Burger Destination - Pulp Fiction themed restaurant featuring the famous Big Kahuna burger",
+      "url": "https://royalewithcheese.menu",
+      "telephone": "+1-313-315-3014",
+      "address": {
+        "@type": "PostalAddress",
+        "streetAddress": "4163 CASS AVE",
+        "addressLocality": "Detroit",
+        "addressRegion": "MI",
+        "postalCode": "48201",
+        "addressCountry": "US"
+      },
+      "geo": {
+        "@type": "GeoCoordinates",
+        "latitude": "42.3601",
+        "longitude": "-83.0648"
+      },
+      "openingHours": [
+        "Mo-Th 11:00-22:00",
+        "Fr-Sa 11:00-23:00",
+        "Su 12:00-18:00"
+      ],
+      "servesCuisine": "American",
+      "priceRange": "$10-15",
+      "aggregateRating": {
+        "@type": "AggregateRating",
+        "ratingValue": "4.8",
+        "reviewCount": "3000"
+      },
+      "image": [
+        "https://royalewithcheese.menu/og-image.jpg"
+      ],
+      "menu": "https://royalewithcheese.menu/#menu",
+      "acceptsReservations": "false",
+      "hasMenu": {
+        "@type": "Menu",
+        "name": "Royale with Cheese Menu",
+        "description": "Gourmet burgers, signature bites, chicken sandwiches, fresh salads, and craft shakes",
+        "hasMenuSection": [
+          {
+            "@type": "MenuSection",
+            "name": "Signature Burgers",
+            "description": "Our famous gourmet burger creations"
+          },
+          {
+            "@type": "MenuSection", 
+            "name": "Royale Bites",
+            "description": "Appetizers and small plates"
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Chicken Sandwiches", 
+            "description": "Premium chicken creations"
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Royale Greens",
+            "description": "Fresh salads and healthy options"
+          },
+          {
+            "@type": "MenuSection",
+            "name": "Craft Shakes",
+            "description": "Premium milkshakes and dessert drinks"
+          }
+        ]
+      }
+    }
+    </script>
+    
+    <link rel="apple-touch-icon" href="%PUBLIC_URL%/logo192.png" />
+    <link rel="manifest" href="%PUBLIC_URL%/manifest.json" />
+    
+    <!-- Preload critical resources -->
+    <link rel="preload" href="%PUBLIC_URL%/images/hero-bg.jpg" as="image" type="image/jpeg">
+    
+    <title>🍔 Royale with Cheese - Detroit's #1 Burger Destination | Big Kahuna & Pulp Fiction Themed Restaurant</title>
+  </head>
+  <body>
+    <noscript>You need to enable JavaScript to run this app.</noscript>
+    <div id="root"></div>
+    
+    <!-- Performance monitoring -->
+    <script>
+      // Basic performance monitoring
+      window.addEventListener('load', function() {
+        if ('performance' in window) {
+          setTimeout(function() {
+            const perfData = performance.getEntriesByType('navigation')[0];
+            console.log('Page Load Time:', perfData.loadEventEnd - perfData.fetchStart, 'ms');
+          }, 0);
+        }
+      });
+    </script>
+  </body>
+</html>

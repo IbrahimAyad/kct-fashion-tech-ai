@@ -1,0 +1,30 @@
+.App {
+  text-align: center;
+}
+
+/* Hide all prices */
+.price,
+[class*="Price"],
+[class*="price"],
+[data-price] {
+  display: none !important;
+}
+
+/* Prevent bouncy scrolling on mobile */
+body, html {
+  overflow-x: hidden;
+  scroll-behavior: smooth;
+}
+
+body, html {
+  -webkit-overflow-scrolling: touch;
+}
+
+body {
+  overscroll-behavior: none;
+}
+
+#root {
+  -webkit-overflow-scrolling: touch;
+  overflow-x: hidden;
+} 
