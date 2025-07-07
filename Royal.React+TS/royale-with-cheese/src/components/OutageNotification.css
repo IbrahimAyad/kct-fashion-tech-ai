@@ -1,0 +1,247 @@
+/* Outage Notification Styles */
+.outage-notification-overlay {
+  position: fixed;
+  top: 0;
+  left: 0;
+  right: 0;
+  bottom: 0;
+  background: rgba(0, 0, 0, 0.4);
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  z-index: 10000;
+  animation: fadeIn 0.3s ease-out;
+}
+
+.outage-notification-popup {
+  background: linear-gradient(135deg, #ff4444, #cc0000);
+  border: 3px solid #ffffff;
+  border-radius: 20px;
+  padding: 25px;
+  max-width: 90%;
+  width: 450px;
+  max-height: 90vh;
+  overflow-y: auto;
+  position: relative;
+  box-shadow: 0 20px 40px rgba(0, 0, 0, 0.3);
+  animation: slideIn 0.4s ease-out;
+  color: white;
+}
+
+.outage-notification-close {
+  position: absolute;
+  top: 15px;
+  right: 20px;
+  background: rgba(255, 255, 255, 0.2);
+  border: none;
+  border-radius: 50%;
+  width: 35px;
+  height: 35px;
+  font-size: 24px;
+  color: white;
+  cursor: pointer;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  transition: background 0.3s ease;
+}
+
+.outage-notification-close:hover {
+  background: rgba(255, 255, 255, 0.3);
+  transform: scale(1.1);
+}
+
+.outage-notification-content {
+  text-align: center;
+}
+
+.outage-notification-header h2 {
+  font-size: 24px;
+  margin: 0 0 10px 0;
+  font-weight: bold;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  animation: pulse 2s infinite;
+}
+
+.outage-location {
+  font-size: 18px;
+  font-weight: bold;
+  margin: 0 0 20px 0;
+  color: #ffeeee;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.outage-notification-message {
+  margin-bottom: 20px;
+}
+
+.outage-notification-message p {
+  font-size: 16px;
+  line-height: 1.5;
+  margin: 10px 0;
+  text-shadow: 1px 1px 2px rgba(0, 0, 0, 0.3);
+}
+
+.outage-phone-number {
+  background: rgba(255, 255, 255, 0.15);
+  border-radius: 15px;
+  padding: 15px;
+  margin: 20px 0;
+  backdrop-filter: blur(5px);
+  border: 2px solid rgba(255, 255, 255, 0.2);
+}
+
+.phone-number {
+  font-size: 28px;
+  font-weight: bold;
+  color: #ffffff;
+  text-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+  letter-spacing: 2px;
+}
+
+.outage-action-buttons {
+  display: flex;
+  gap: 15px;
+  justify-content: center;
+  margin: 25px 0;
+  flex-wrap: wrap;
+}
+
+.outage-btn {
+  padding: 12px 24px;
+  border: none;
+  border-radius: 25px;
+  font-size: 16px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  text-decoration: none;
+  display: inline-flex;
+  align-items: center;
+  gap: 8px;
+  min-width: 130px;
+  justify-content: center;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.2);
+}
+
+.outage-btn-call {
+  background: linear-gradient(135deg, #28a745, #20c997);
+  color: white;
+}
+
+.outage-btn-call:hover {
+  background: linear-gradient(135deg, #20c997, #28a745);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.outage-btn-text {
+  background: linear-gradient(135deg, #17a2b8, #007bff);
+  color: white;
+}
+
+.outage-btn-text:hover {
+  background: linear-gradient(135deg, #007bff, #17a2b8);
+  transform: translateY(-2px);
+  box-shadow: 0 6px 12px rgba(0, 0, 0, 0.3);
+}
+
+.outage-apology {
+  font-style: italic;
+  color: #ffeeee;
+  font-size: 14px;
+  margin-top: 15px;
+}
+
+.outage-notification-footer {
+  margin-top: 20px;
+  padding-top: 15px;
+  border-top: 1px solid rgba(255, 255, 255, 0.3);
+}
+
+.outage-timer {
+  color: #ffcccc;
+  font-size: 12px;
+  font-weight: bold;
+}
+
+/* Animations */
+@keyframes fadeIn {
+  from {
+    opacity: 0;
+  }
+  to {
+    opacity: 1;
+  }
+}
+
+@keyframes slideIn {
+  from {
+    transform: translateY(-50px) scale(0.9);
+    opacity: 0;
+  }
+  to {
+    transform: translateY(0) scale(1);
+    opacity: 1;
+  }
+}
+
+@keyframes pulse {
+  0%, 100% {
+    transform: scale(1);
+  }
+  50% {
+    transform: scale(1.05);
+  }
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .outage-notification-popup {
+    width: 95%;
+    padding: 20px;
+    margin: 10px;
+  }
+  
+  .outage-notification-header h2 {
+    font-size: 20px;
+  }
+  
+  .outage-location {
+    font-size: 16px;
+  }
+  
+  .phone-number {
+    font-size: 24px;
+  }
+  
+  .outage-action-buttons {
+    flex-direction: column;
+    align-items: center;
+  }
+  
+  .outage-btn {
+    width: 100%;
+    max-width: 200px;
+  }
+}
+
+@media (max-width: 480px) {
+  .outage-notification-popup {
+    width: 98%;
+    padding: 15px;
+  }
+  
+  .outage-notification-header h2 {
+    font-size: 18px;
+  }
+  
+  .phone-number {
+    font-size: 20px;
+    letter-spacing: 1px;
+  }
+  
+  .outage-notification-message p {
+    font-size: 14px;
+  }
+} 

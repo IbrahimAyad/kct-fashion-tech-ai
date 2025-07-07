@@ -1,0 +1,285 @@
+/* SkyTab Menu Item Card Styles */
+.skytab-item-card {
+  background: white;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease, box-shadow 0.3s ease;
+  position: relative;
+  border: 2px solid transparent;
+}
+
+.skytab-item-card:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 24px rgba(0, 0, 0, 0.15);
+  border-color: #8b4513;
+}
+
+.skytab-item-card--list {
+  display: flex;
+  flex-direction: row;
+  align-items: center;
+  padding: 16px;
+  margin-bottom: 8px;
+}
+
+.skytab-item-card--compact {
+  padding: 12px;
+  background: #f8f9fa;
+}
+
+/* Image Container */
+.skytab-item-card__image-container {
+  position: relative;
+  overflow: hidden;
+}
+
+.skytab-item-card__image-container--card {
+  height: 200px;
+}
+
+.skytab-item-card__image-container--list {
+  width: 120px;
+  height: 80px;
+  margin-right: 16px;
+  border-radius: 8px;
+  flex-shrink: 0;
+}
+
+.skytab-item-card__image-container--compact {
+  height: 120px;
+  margin-bottom: 8px;
+  border-radius: 6px;
+}
+
+.skytab-item-card__image {
+  width: 100%;
+  height: 100%;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.skytab-item-card:hover .skytab-item-card__image {
+  transform: scale(1.05);
+}
+
+/* Badges */
+.skytab-item-card__skytab-badge {
+  position: absolute;
+  top: 8px;
+  right: 8px;
+  background: linear-gradient(135deg, #4f46e5, #7c3aed);
+  color: white;
+  padding: 4px 8px;
+  border-radius: 6px;
+  font-size: 10px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 4px;
+  backdrop-filter: blur(10px);
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.2);
+}
+
+.skytab-item-card__category-tag {
+  background: linear-gradient(135deg, #8b4513, #a0522d);
+  color: white;
+  padding: 2px 6px;
+  border-radius: 8px;
+  font-size: 10px;
+  font-weight: 600;
+  text-transform: uppercase;
+  position: absolute;
+  top: 8px;
+  left: 8px;
+}
+
+.skytab-item-card__popular-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(135deg, #f59e0b, #d97706);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 9px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+.skytab-item-card__featured-badge {
+  position: absolute;
+  top: 8px;
+  left: 8px;
+  background: linear-gradient(135deg, #7c3aed, #5b21b6);
+  color: white;
+  padding: 4px 6px;
+  border-radius: 6px;
+  font-size: 9px;
+  font-weight: bold;
+  display: flex;
+  align-items: center;
+  gap: 2px;
+}
+
+/* Content */
+.skytab-item-card__content--card {
+  padding: 20px;
+}
+
+.skytab-item-card__content--list {
+  flex: 1;
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+}
+
+.skytab-item-card__content--compact {
+  padding: 0;
+}
+
+.skytab-item-card__info {
+  flex: 1;
+}
+
+.skytab-item-card__header {
+  display: flex;
+  justify-content: space-between;
+  align-items: flex-start;
+  margin-bottom: 8px;
+}
+
+/* Title */
+.skytab-item-card__title {
+  font-weight: bold;
+  color: #2c3e50;
+  margin: 0;
+  flex: 1;
+}
+
+.skytab-item-card__title--card {
+  font-size: 18px;
+}
+
+.skytab-item-card__title--list {
+  font-size: 16px;
+}
+
+.skytab-item-card__title--compact {
+  font-size: 14px;
+}
+
+/* Price */
+.skytab-item-card__price,
+.skytab-item-card__price--list,
+.skytab-item-card__price--card {
+  display: none !important; /* Hide all prices */
+}
+
+/* Description */
+.skytab-item-card__description {
+  color: #666;
+  line-height: 1.5;
+  margin: 8px 0 16px 0;
+}
+
+.skytab-item-card__description--card {
+  font-size: 14px;
+}
+
+.skytab-item-card__description--list {
+  font-size: 12px;
+  margin: 4px 0;
+}
+
+.skytab-item-card__description--compact {
+  font-size: 12px;
+  margin: 4px 0 8px 0;
+}
+
+/* Order Button */
+.skytab-item-card__order-btn {
+  background: linear-gradient(135deg, #8b4513, #a0522d);
+  color: white;
+  border: none;
+  padding: 12px 20px;
+  border-radius: 8px;
+  font-weight: bold;
+  cursor: pointer;
+  transition: all 0.3s ease;
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  text-decoration: none;
+  font-size: 14px;
+  justify-content: center;
+}
+
+.skytab-item-card__order-btn:hover {
+  background: linear-gradient(135deg, #a0522d, #8b4513);
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(139, 69, 19, 0.3);
+}
+
+.skytab-item-card__order-btn:active {
+  transform: translateY(0);
+}
+
+.skytab-item-card__order-btn--card {
+  width: 100%;
+}
+
+.skytab-item-card__order-btn--list {
+  min-width: 140px;
+  padding: 8px 16px;
+  font-size: 12px;
+  flex-shrink: 0;
+}
+
+.skytab-item-card__order-btn--compact {
+  width: 100%;
+  padding: 8px 12px;
+  font-size: 12px;
+}
+
+/* Responsive Design */
+@media (max-width: 768px) {
+  .skytab-item-card--list {
+    flex-direction: column;
+    text-align: center;
+  }
+  
+  .skytab-item-card__image-container--list {
+    width: 100%;
+    height: 120px;
+    margin-right: 0;
+    margin-bottom: 12px;
+  }
+  
+  .skytab-item-card__content--list {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}
+
+@media (max-width: 480px) {
+  .skytab-item-card__header {
+    flex-direction: column;
+    align-items: flex-start;
+    gap: 4px;
+  }
+  
+  .skytab-item-card__price {
+    font-size: 16px;
+  }
+  
+  .skytab-item-card__title--card {
+    font-size: 16px;
+  }
+  
+  .skytab-item-card__price--card {
+    font-size: 16px;
+  }
+} 
